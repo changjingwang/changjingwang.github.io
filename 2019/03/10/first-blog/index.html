@@ -14,10 +14,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="title: Jupyter Notebook 与Markdown知识点汇总 Jupyter Notebookjupyter notebook有命令模式和编辑模式，cell框为蓝色是命令模式，绿色是编辑模式. Jupyter Notebook快捷键:命令模式（按Esc） F:查找并且替换 Ctrl+Shift+F:打开命令配置 P:打开命令配置 Shift+Enter: 运行代码块，选择下面的代码">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-10T03:01:57.268Z">
+<meta property="og:image" content="http://m.3lian.com/gif/2017/02-14/150187.html">
+<meta property="og:updated_time" content="2019-03-10T03:44:17.500Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="title: Jupyter Notebook 与Markdown知识点汇总 Jupyter Notebookjupyter notebook有命令模式和编辑模式，cell框为蓝色是命令模式，绿色是编辑模式. Jupyter Notebook快捷键:命令模式（按Esc） F:查找并且替换 Ctrl+Shift+F:打开命令配置 P:打开命令配置 Shift+Enter: 运行代码块，选择下面的代码">
+<meta name="twitter:image" content="http://m.3lian.com/gif/2017/02-14/150187.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,7 +69,7 @@
         <section id="main"><article id="post-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/10/first-blog/" class="article-date">
-  <time datetime="2019-03-10T03:01:57.267Z" itemprop="datePublished">2019-03-10</time>
+  <time datetime="2019-03-10T03:44:17.491Z" itemprop="datePublished">2019-03-10</time>
 </a>
     
   </div>
@@ -151,14 +153,43 @@
 <p>上: 光标上移</p>
 <hr>
 <h2 id="Markdown基础语法"><a href="#Markdown基础语法" class="headerlink" title="Markdown基础语法"></a>Markdown基础语法</h2><p><strong>标题：</strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">## 三级标题</span><br><span class="line">以此类推</span><br></pre></td></tr></table></figure></p>
-<pre><code>**加粗：**  在要加粗的文字左右两边加上两个 *
-</code></pre>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br></pre></td></tr></table></figure>
-<p><strong>倾斜加粗：</strong></p>
+<p>   <strong>加粗：</strong>  在要加粗的文字左右两边加上两个 *<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br></pre></td></tr></table></figure></p>
+<p><strong>倾斜加粗：</strong> 在要倾斜加粗的文字左右两边分别加上三个*<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***倾斜加粗***</span><br></pre></td></tr></table></figure></p>
+<p><strong>插入图片：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片Alt](图片地址)</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://m.3lian.com/gif/2017/02-14/150187.html" alt="风景"><br><strong>超链接：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 )</span><br></pre></td></tr></table></figure></p>
+<p><a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p>
+<p><strong>无序列表：</strong> 在前面加-、+、* 都可以<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<p><strong>有序列表：</strong> 在前面加上数字和点<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<p><strong>引用：</strong>  在引用的内容前加上&gt;，多个引用加多个&gt;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;1213</span><br><span class="line">&gt;&gt;2334</span><br><span class="line">&gt;&gt;&gt;abcd</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>1213</p>
+<blockquote>
+<p>2334</p>
+<blockquote>
+<p>abcd</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>代码:</strong> 单行代码用一个反引号括起来，多行代码块用三个反引号括起来，且三个反引号占一行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">`代码`</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line">代码1</span><br><span class="line">代码2</span><br><span class="line">```</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/10/first-blog/" data-id="cjt2c1rpu000118uuuejrceqs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/10/first-blog/" data-id="cjt2dkmsh00002ouucz4fmwe3" class="article-share-link">Share</a>
       
       
     </footer>
